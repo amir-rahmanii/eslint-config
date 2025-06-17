@@ -25,6 +25,9 @@
     "postpublish": "pinst --enable",
     "pre-commit": "npm run test && lint-staged"
   },
+  "lint-staged": {
+    "**/*.{js,mjs}": "eslint --fix"
+  },
   "main": "./cjs/index.js",
   "module": "./src/index.mjs",
   "exports": {
